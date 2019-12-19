@@ -1,0 +1,35 @@
+{
+  "name": "timestamp",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "ava **/*.test.ts"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-helmet": "^5.2.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.0",
+    "@types/koa-helmet": "^3.1.2",
+    "@types/koa-router": "^7.0.42",
+    "@types/supertest": "^2.0.8",
+    "ava": "^2.4.0",
+    "supertest": "^4.0.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
